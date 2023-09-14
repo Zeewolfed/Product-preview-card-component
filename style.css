@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,800;1,9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+:root {
+    --white: #ffffff;
+    --darkgrey: #747682;
+    --mediumlightgrey: #707176;
+    --darkgreen: #3D8168;
+    --black: #000000;
+    --bluishblack: #242A31;
+    --cream: #F2E9E2;
+ }
+
+*, a {
+    color: var(--black);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    text-decoration: none;
+
+} 
+body {
+    background-color: var(--cream);
+    
+}
+
+.card-container { 
+    background-color: var(--white);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 344px;
+    height: 600px;
+    margin: 30px 15px;
+}
+
+.image { 
+    height: 239px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(img/image-product-mobile.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.full-content {
+    margin: 20px 20px 10px 20px;
+}
+
+.top-content h2 {
+    color: var(--mediumlightgrey);
+    font-size: 1.35em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.top-content h1 {
+    color: var(--bluishblack);
+    font-size: 3em;
+    font-weight: 800;
+    font-family: 'Fraunces', serif;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.paragraph p {
+    color: var(--darkgrey);
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 21px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.new-price  p{
+    margin-right: 20px;
+    color: var(--darkgreen);
+    font-size: 3em;
+    font-weight: 800;
+    font-family: 'Fraunces', serif;
+}
+.old-price   {
+    align-self: center;
+       
+}
+.old-price p {
+    color: var(--darkgrey);
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.button {
+    justify-content: center;
+    background-color: var(--darkgreen);
+    border-radius: 8px;
+    width: 304px;
+    height: 48px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.buttom-pd {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.buttom-pd img {
+    margin-right: 15px;
+    
+}
+
+.buttom-pd p {
+    color: var(--white);
+    font-size: 1.2em;
+    
+}
